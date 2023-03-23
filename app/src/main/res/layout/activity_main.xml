@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/background_button"
+        android:background="@drawable/flashlight_background" />
+
+    <ImageView
+        android:id="@+id/info_button"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/img_border"
+        android:src="@drawable/ic_baseline_info_24" />
+
+    <RelativeLayout
+        android:id="@+id/background_button"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/black"
+        android:gravity="center|top">
+
+        <ImageButton
+            android:id="@+id/button_flashlight"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/img_border"
+            android:src="@drawable/flashlight_button" />
+    </RelativeLayout>
+</RelativeLayout>
